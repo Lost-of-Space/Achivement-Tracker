@@ -333,6 +333,6 @@ form div.incorrect input {
     border-color: #f06272;
 }
 
-#error-message {
+#error-message, #sign-in-error-message {
     color: #f06272;
 }

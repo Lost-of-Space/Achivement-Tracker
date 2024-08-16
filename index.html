@@ -1,58 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="./styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
 
     <title>Login - Register</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="container" id="container">
-        <div class="form-container sign-up">
-            <form id="form">
-                <!-- @@ Register @@ -->
-                <h1>Create Account</h1>
-                <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-                <span class="or-span">or use your email for registeration</span>
-                <!-- Username input -->
-                <div>
-                    <label class="input-icon" for="username-input">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-                            <path
-                                d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Z" />
-                        </svg>
-                    </label>
-                    <input type="text" name="username" id="username-input" placeholder="Username">
-                </div>
-                <!-- Email input -->
-                <div>
-                    <label class="input-icon" for="email-input">
-                        <span>@</span>
-                    </label>
-                    <input type="email" name="email" id="email-input" placeholder="Email">
-                </div>
-                <!-- Password field -->
-                <div>
-                    <label class="input-icon" for="password-input">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-                            <path
-                                d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm240-200q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80Z" />
-                        </svg>
-                    </label>
-                    <input type="password" name="password" id="password-input" placeholder="Password">
-                </div>
-                <!-- Repeat password -->
-                <!-- <div>
+      <div class="form-container sign-up">
+        <form id="form">
+          <!-- @@ Register @@ -->
+          <h1>Create Account</h1>
+          <div class="social-icons">
+            <a href="#" class="icon"
+              ><i class="fa-brands fa-google-plus-g"></i
+            ></a>
+            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="icon"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+          <span class="or-span">or use your email for registeration</span>
+          <!-- Username input -->
+          <div>
+            <label class="input-icon" for="username-input">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 -960 960 960"
+                width="24"
+              >
+                <path
+                  d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Z"
+                />
+              </svg>
+            </label>
+            <input
+              type="text"
+              name="username"
+              id="username-input"
+              placeholder="Username"
+            />
+          </div>
+          <!-- Email input -->
+          <div>
+            <label class="input-icon" for="email-input">
+              <span>@</span>
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email-input"
+              placeholder="Email"
+            />
+          </div>
+          <!-- Password field -->
+          <div>
+            <label class="input-icon" for="password-input">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 -960 960 960"
+                width="24"
+              >
+                <path
+                  d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm240-200q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80Z"
+                />
+              </svg>
+            </label>
+            <input
+              type="password"
+              name="password"
+              id="password-input"
+              placeholder="Password"
+            />
+          </div>
+          <!-- Repeat password -->
+          <!-- <div>
                     <label class="input-icon" for="repeat-password-input">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
                             <path
@@ -62,66 +94,89 @@
                     <input type="password" name="repeat-password" id="repeat-password-input"
                         placeholder="Repeat Password">
                 </div> -->
-                <button type="submit">Sign Up</button>
-                <p id="error-message"></p>
-            </form>
+          <button type="submit">Sign Up</button>
+          <p id="error-message"></p>
+        </form>
+      </div>
+      <!-- @@ Login @@ -->
+      <div class="form-container sign-in">
+        <form id="sign-in-form">
+          <h1>Sign In</h1>
+          <div class="social-icons">
+            <a href="#" class="icon"
+              ><i class="fa-brands fa-google-plus-g"></i
+            ></a>
+            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="icon"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+          <span class="or-span">or use your username and password</span>
+          <!-- Username input -->
+          <div>
+            <label class="input-icon" for="sign-in-username-input">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 -960 960 960"
+                width="24"
+              >
+                <path
+                  d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Z"
+                />
+              </svg>
+            </label>
+            <input
+              type="text"
+              name="username"
+              id="sign-in-username-input"
+              placeholder="Username"
+            /><!-- edited -->
+          </div>
+          <!-- Password input -->
+          <div>
+            <label class="input-icon" for="sign-in-password-input">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 -960 960 960"
+                width="24"
+              >
+                <path
+                  d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm240-200q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80Z"
+                />
+              </svg>
+            </label>
+            <input
+              type="password"
+              name="password"
+              id="sign-in-password-input"
+              placeholder="Password"
+            /><!-- edited -->
+          </div>
+          <a href="#">Forget Your Password?</a>
+          <button type="submit">Sign In</button>
+          <p id="sign-in-error-message"></p>
+        </form>
+      </div>
+      <div class="toggle-container">
+        <div class="toggle">
+          <div class="toggle-panel toggle-left">
+            <h1>Welcome Back!</h1>
+            <p>Already have an account? Click on button below</p>
+            <button class="hidden" id="login">Sign In</button>
+          </div>
+          <div class="toggle-panel toggle-right">
+            <h1>Hello, Friend!</h1>
+            <p>First time here? Register to start your adventure!</p>
+            <button class="hidden" id="register">Sign Up</button>
+          </div>
         </div>
-        <!-- @@ Login @@ -->
-        <div class="form-container sign-in">
-            <form id="form-sign-in">
-                <h1>Sign In</h1>
-                <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-                <span class="or-span">or use your username and password</span>
-                <!-- Username input -->
-                <div>
-                    <label class="input-icon" for="sign-in-username-input">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-                            <path
-                                d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Z" />
-                        </svg>
-                    </label>
-                    <input type="text" name="username" id="sign-in-username-input"
-                        placeholder="Username"><!-- edited -->
-                </div>
-                <!-- Password input -->
-                <div>
-                    <label class="input-icon" for="sign-in-password-input">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-                            <path
-                                d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm240-200q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80Z" />
-                        </svg>
-                    </label>
-                    <input type="password" name="password" id="sign-in-password-input"
-                        placeholder="Password"><!-- edited -->
-                </div>
-                <a href="#">Forget Your Password?</a>
-                <button type="submit">Sign In</button>
-                <p id="error-message"></p>
-            </form>
-        </div>
-        <div class="toggle-container">
-            <div class="toggle">
-                <div class="toggle-panel toggle-left">
-                    <h1>Welcome Back!</h1>
-                    <p>Already have an account? Click on button below</p>
-                    <button class="hidden" id="login">Sign In</button>
-                </div>
-                <div class="toggle-panel toggle-right">
-                    <h1>Hello, Friend!</h1>
-                    <p>First time here? Register to start your adventure!</p>
-                    <button class="hidden" id="register">Sign Up</button>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
 
     <script src="./scripts/script.js"></script>
     <script src="./scripts/validation.js"></script>
-</body>
-
+  </body>
 </html>
